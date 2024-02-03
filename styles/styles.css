@@ -1,0 +1,98 @@
+@charset 'UFT-8' ;
+
+:root {
+  --f_fontSize : 16px ;
+  --f_lineHeight : 1.5 ;
+  --f_fontWeight : 400 ;
+
+  /* Colors */
+  --c_white : #FFF ;
+  --c_black : #000 ;
+  --c_green500 : #6DE754 ;
+  --c_green700 : #1F392C ;
+  --c_green800 : #1E201D ;
+  --c_green900 : #161815 ;
+  --c_grey300 : #909090 ;
+}
+
+* {
+  margin : 0 ;
+  padding : 0 ;
+
+  border : 1px dotted red ;
+}
+
+html {
+  font-size : var( --f_fontSize ) ;
+  line-height : var( --f_lineHeight ) ;
+  font-weight : var( --f_fontWeight ) ;
+}
+
+/* Comienzo Header */
+.Header {
+  height : 75vh ;
+
+  /* background-color : var( --c_green900 ) */;
+}
+
+.Header .section {
+  height : 128px ;
+
+  display : flex ;
+  flex-direction : row ;
+  justify-content : space-between ;
+  align-items : end ;
+}
+
+.Header .section .navbar {}
+
+.Header .section .navbar .navbar__menu {
+  display : flex ;
+  gap : 1rem ;
+
+  list-style-type : none ;
+}
+
+.Header .section .navbar .navbar__menu .navbar__menu--item {
+  color : var( --c_grey300 ) ;
+}
+
+
+.Header .section .actions {}
+
+.Header .section .actions .actions__btn {
+  padding : .75rem 2rem ;
+
+  font-weight: calc( var( --f_fontWeight ) + 300 ) ;
+  
+  border : 3px solid var( c_grey300 ) ;
+  border-radius : 1rem ;
+}
+
+.Header .section .actions .actions__btn:first-child {
+  color : var( --c_white ) ;
+
+  background-color : transparent ;
+
+  border-color : var( --c_green500 ) ;
+}
+
+
+.Header .section .actions .actions__btn:last-child {
+  color : var( --c_black ) ;
+  background-color : var( --c_green500 ) ;
+
+}
+
+/* Comienzo Aside */
+.Aside {}
+
+
+
+/* Comienzo Main */
+.Main {}
+
+
+
+/* Comienzo Footer */
+.Footer {}
