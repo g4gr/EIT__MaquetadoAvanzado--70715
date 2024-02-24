@@ -20,6 +20,8 @@
   --l_screenSM : 6 ;
   --l_screenXS : 4 ;
   
+  /* Sub Grid */
+  
   /* MediaQueries */
   --mq_screenXL : 1200px ;
   --mq_screenLG : 980px ;
@@ -139,7 +141,7 @@ html {
 	}
 }
 
-@media screen and ( min-width : 560px ) and ( max-width : 740px ) {
+@media screen and ( 560px <= width <= 740px ) {
 	.Body {
 		grid-template-columns : repeat( var( --l_screenMD ) , 1fr ) ;
 	}
